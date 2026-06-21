@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcMate</title>
+    <link rel="stylesheet" href="CalcMate.css">
+</head>
+<body>
+
+    <header>
+        CalcMate
+    </header>
+
+    <main>
+        <div class="calculator">
+            <input type="text" class="display" id="screen" value="0" readonly>
+            
+            <div class="buttons">
+                <button class="btn-clear" onclick="clearScreen()">AC</button>
+                <button class="btn-operator" onclick="appendValue('%')">%</button>
+                <button class="btn-grey" onclick="appendValue('(')">(</button>
+                <button class="btn-grey" onclick="appendValue(')')">)</button>
+                <button class="btn-operator" onclick="appendValue('/')">/</button>
+
+                <button class="btn-grey" onclick="appendValue('7')">7</button>
+                <button class="btn-grey" onclick="appendValue('8')">8</button>
+                <button class="btn-grey" onclick="appendValue('9')">9</button>
+                <button class="btn-operator" onclick="appendValue('*')">*</button>
+
+                <button class="btn-grey" onclick="appendValue('4')">4</button>
+                <button class="btn-grey" onclick="appendValue('5')">5</button>
+                <button class="btn-grey" onclick="appendValue('6')">6</button>
+                <button class="btn-operator" onclick="appendValue('-')">-</button>
+
+                <button class="btn-grey" onclick="appendValue('1')">1</button>
+                <button class="btn-grey" onclick="appendValue('2')">2</button>
+                <button class="btn-grey" onclick="appendValue('3')">3</button>
+                <button class="btn-operator" onclick="appendValue('+')">+</button>
+
+                <button class="btn-grey" onclick="appendValue('0')">0</button>
+                <button class="btn-grey" onclick="appendValue('.')">.</button>
+                <button class="btn-equal" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 CalcMate | Designed for Daily General Caluculations!
+    </footer>
+
+    <script src="CalcMate.js"></script>
+</body>
+</html>
